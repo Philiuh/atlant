@@ -82,8 +82,7 @@ const CraneImg = styled.img`
 `;
 
 const TrallTextWrapper = styled.div`
-  color: white;
-  background: rgba(0, 0, 0, 0.7);
+  color: black;
   margin-left: 150px;
   padding: 33px 0px 33px 0px;
 `;
@@ -91,7 +90,7 @@ const TrallTextWrapper = styled.div`
 const PassportLink = styled.a`
   font: 400 20px "Open Sans";
   color: black;
-  text-decoration-color: darkorange;
+  text-decoration: none;
   &:hover {
     color: darkorange;
   }
@@ -131,11 +130,35 @@ const Technics = () => {
               </TopBlock>
               <TopBlock>
                 <TopTableText>
-                  Паспорт
-                  <br />
-                  (техническая документация)
+                  Характеристики техники
                 </TopTableText>
               </TopBlock>
+            </tr>
+            <tr>
+              <ImgBlock>
+                <TableText>LIEBHERR LTM 1040/1</TableText>
+                <CraneImg src={crane3} />
+              </ImgBlock>
+              <CraneBlock>
+                <TableText>40</TableText>
+              </CraneBlock>
+              <CraneBlock>
+                <TableText>
+                  30
+                  <br />
+                  (30.0+8.1)
+                </TableText>
+              </CraneBlock>
+              <CraneBlock>
+                <TableText>
+                  7141х6300
+                  <br />
+                  (длина 10970)
+                </TableText>
+              </CraneBlock>
+              <RightBlock>
+                <PassportLink href={liebherr40}>Паспорт</PassportLink>
+              </RightBlock>
             </tr>
             <tr>
               <ImgBlock>
@@ -187,32 +210,6 @@ const Technics = () => {
             </tr>
             <tr>
               <ImgBlock>
-                <TableText>LIEBHERR LTM 1040/1</TableText>
-                <CraneImg src={crane3} />
-              </ImgBlock>
-              <CraneBlock>
-                <TableText>40</TableText>
-              </CraneBlock>
-              <CraneBlock>
-                <TableText>
-                  30
-                  <br />
-                  (30.0+8.1)
-                </TableText>
-              </CraneBlock>
-              <CraneBlock>
-                <TableText>
-                  7141х6300
-                  <br />
-                  (длина 10970)
-                </TableText>
-              </CraneBlock>
-              <RightBlock>
-                <PassportLink href={liebherr40}>Паспорт</PassportLink>
-              </RightBlock>
-            </tr>
-            <tr>
-              <ImgBlock>
                 <TableText>LIEBHERR LTM 1100-4.2</TableText>
                 <CraneImg src={crane4} />
               </ImgBlock>
@@ -253,6 +250,28 @@ const Technics = () => {
               </CraneBlock>
               <RightBlock>
                 <PassportLink href={liebherr160}>Паспорт</PassportLink>
+              </RightBlock>
+            </tr>
+            <tr>
+              <ImgBlock>
+                <TableText>TODANO ATF 220 6-5</TableText>
+                <CraneImg src={crane8} />
+              </ImgBlock>
+              <CraneBlock>
+                <TableText>220</TableText>
+              </CraneBlock>
+              <CraneBlock>
+                <TableText>68</TableText>
+              </CraneBlock>
+              <CraneBlock>
+                <TableText>
+                  3045х8300
+                  <br />
+                  (длина 15927)
+                </TableText>
+              </CraneBlock>
+              <RightBlock>
+                <PassportLink href={todano220}>Паспорт</PassportLink>
               </RightBlock>
             </tr>
             <tr>
@@ -305,28 +324,6 @@ const Technics = () => {
               </CraneBlock>
               <RightBlock>
                 <PassportLink href={liebherr350}>Паспорт</PassportLink>
-              </RightBlock>
-            </tr>
-            <tr>
-              <ImgBlock>
-                <TableText>TODANO ATF 220 6-5</TableText>
-                <CraneImg src={crane8} />
-              </ImgBlock>
-              <CraneBlock>
-                <TableText>220</TableText>
-              </CraneBlock>
-              <CraneBlock>
-                <TableText>68</TableText>
-              </CraneBlock>
-              <CraneBlock>
-                <TableText>
-                  3045х8300
-                  <br />
-                  (длина 15927)
-                </TableText>
-              </CraneBlock>
-              <RightBlock>
-                <PassportLink href={todano220}>Паспорт</PassportLink>
               </RightBlock>
             </tr>
           </tbody>

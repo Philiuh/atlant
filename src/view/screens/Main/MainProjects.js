@@ -50,66 +50,36 @@ const ProjectLine = styled.img`
 const MainProjects = () => {
   return (
     <Projects>
-      <Title>Наши проекты</Title>
+      <Title>Фото наших работ</Title>
       <ProjectsList>
         <Project image={project1}>
           <ProjectInner>
             <ProjectLine src={projectLine} />
-            <p>
-              2018, г.Краснодар
-              <br />
-              Монтаж ВЭУ
-            </p>
           </ProjectInner>
         </Project>
         <Project image={project2}>
           <ProjectInner>
             <ProjectLine src={projectLine} />
-            <p>
-              2018, г.Краснодар
-              <br />
-              Монтаж ВЭУ
-            </p>
           </ProjectInner>
         </Project>
         <Project image={project3}>
           <ProjectInner>
             <ProjectLine src={projectLine} />
-            <p>
-              2018, г.Краснодар
-              <br />
-              Монтаж ВЭУ
-            </p>
           </ProjectInner>
         </Project>
         <Project image={project4}>
           <ProjectInner>
             <ProjectLine src={projectLine} />
-            <p>
-              2018, г.Краснодар
-              <br />
-              Монтаж ВЭУ
-            </p>
           </ProjectInner>
         </Project>
         <Project image={project5}>
           <ProjectInner>
             <ProjectLine src={projectLine} />
-            <p>
-              2018, г.Краснодар
-              <br />
-              Монтаж ВЭУ
-            </p>
           </ProjectInner>
         </Project>
         <Project image={project6}>
           <ProjectInner>
             <ProjectLine src={projectLine} />
-            <p>
-              2018, г.Краснодар
-              <br />
-              Монтаж ВЭУ
-            </p>
           </ProjectInner>
         </Project>
       </ProjectsList>

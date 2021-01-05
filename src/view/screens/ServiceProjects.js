@@ -28,7 +28,7 @@ const Title = styled.h2`
 
 const Text = styled.p`
   font: 400 18px "Open Sans";
-  text-align: left;
+  text-align: justify;
   line-height: 36px;
 `;
 

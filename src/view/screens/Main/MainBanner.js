@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import banner from "../../../pics/banner.png";
-import arrow from "../../../pics/arrow.png";
 import Header from "../../screens/Header";
 
 const Banner = styled.div`
@@ -29,28 +28,6 @@ const BannerTitle = styled.h1`
   text-transform: uppercase;
   text-align: left;
   line-height: 75px;
-`;
-
-const BannerButton = styled.div`
-  font: 700 24px "Open Sans";
-  padding: 35px 0 0 30px;
-  color: #ffffff;
-  text-align: left;
-  height: 30px;
-`;
-
-const BannerButtonInner = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: space-around;
-  border: 2px solid #ffffff;
-  padding: 29px 0px;
-  height: 100%;
-  width: 350px;
-`;
-
-const Arrow = styled.img`
-  padding-left: 17px;
 `;
 
 const BannerInfo = styled.div`
@@ -91,14 +68,8 @@ const MainBanner = () => {
             <br />
             компания
             <br />
-            Атлант
+            Атлант-ИМК
           </BannerTitle>
-          <BannerButton>
-            <BannerButtonInner>
-              <p>подробнее</p>
-              <Arrow src={arrow} />
-            </BannerButtonInner>
-          </BannerButton>
         </BannerInner>
         <BannerInfo>
           <p>
