@@ -11,7 +11,6 @@ import crane7 from "../../pics/crane7.png";
 import crane8 from "../../pics/crane8.png";
 import demag50 from "../../passport/demag50.pdf";
 import demag55 from "../../passport/demag55.pdf";
-import demag60 from "../../passport/demag60.pdf";
 import liebherr40 from "../../passport/liebherr40.pdf";
 import liebherr100 from "../../passport/liebherr100.pdf";
 import liebherr160 from "../../passport/liebherr160.pdf";
@@ -34,29 +33,34 @@ const Title = styled.h2`
 
 const Table = styled.table`
   border-collapse: collapse;
+  max-width: 1500px;
 `;
 
 const TopBlock = styled.td`
   text-align: center;
   padding: 5px;
+  background-color: #e5e5e5;
+  border: 1px solid #828282;
+  width: 300px;
 `;
 
 const CraneBlock = styled(TopBlock)`
-  border-right: 2px solid black;
-  padding-bottom: 35px;
+  background-color: transparent;
 `;
 
 const RightBlock = styled(CraneBlock)`
-  border-right: none;
   text-align: center;
 `;
 
-const ImgBlock = styled(CraneBlock)`
+const ImgBlock = styled.td`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  padding-right: 30px;
+  align-items: center;
+  padding: 0 25px 10px 25px;
+  border-left: 1px solid #828282;
+  border-bottom: 1px solid #828282;
+  width: 300px;
 `;
 
 const TopTableText = styled.span`
@@ -72,18 +76,16 @@ const TableName = styled.p`
   font: 400 36px "Open Sans";
   padding: 10px 0px;
   border-bottom: 2px solid #000000;
-  margin-top: 50px;
-  margin-left: 170px;
+  margin: 50px 200px;
 `;
 
 const CraneImg = styled.img`
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
 `;
 
 const TrallTextWrapper = styled.div`
   color: black;
-  margin-left: 150px;
   padding: 33px 0px 33px 0px;
 `;
 
@@ -129,9 +131,7 @@ const Technics = () => {
                 </TopTableText>
               </TopBlock>
               <TopBlock>
-                <TopTableText>
-                  Характеристики техники
-                </TopTableText>
+                <TopTableText>Характеристики техники</TopTableText>
               </TopBlock>
             </tr>
             <tr>
@@ -468,9 +468,7 @@ const Technics = () => {
                   <TableText>
                     Модульный, самоходный транспортер
                     <br />
-                    SHEUERLE
-                    <br />
-                    SPMT
+                    SHEUERLE SPMT
                   </TableText>
                 </TrallTextWrapper>
               </CraneBlock>
@@ -499,9 +497,7 @@ const Technics = () => {
                   <TableText>
                     Модульный прицеп-платформа
                     <br />
-                    SHEUERLE
-                    <br />
-                    KAMAG K25
+                    SHEUERLE KAMAG K25
                   </TableText>
                 </TrallTextWrapper>
               </CraneBlock>

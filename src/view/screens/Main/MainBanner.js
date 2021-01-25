@@ -11,50 +11,29 @@ const Banner = styled.div`
 
 const BannerContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   max-width: 1410px;
-  margin: 110px auto 0;
-`;
-
-const BannerInner = styled.div`
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
 `;
 
 const BannerTitle = styled.h1`
-  font: 700 80px "Open Sans";
-  padding-left: 30px;
+  font: 700 96px "Silom";
   color: #ffffff;
-  text-transform: uppercase;
   text-align: left;
   line-height: 75px;
+  padding-bottom: 38px;
 `;
 
-const BannerInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ffffff;
-  color: white;
-  font: 400 22px "Open Sans";
-  padding: 40px 19px 0px;
-  line-height: 30px;
-  margin-right: 25px;
-`;
-
-const BannerInfoButton = styled.div`
-  color: black;
-  background-color: #fcd94b;
-  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+const BannerText = styled.h2`
+  font: 400 24px "Open Sans";
+  color: #ffffff;
+  max-width: 700px;
+  line-height: 45px;
+  padding-bottom: 200px;
   text-align: center;
-  padding: 15px 27px;
-  margin: 100px 0px 30px;
-  visibility: hidden;
-`;
-
-const Number = styled.a`
-  text-decoration-color: orange;
-  color: orange;
 `;
 
 const MainBanner = () => {
@@ -62,27 +41,13 @@ const MainBanner = () => {
     <Banner>
       <Header />
       <BannerContainer>
-        <BannerInner>
-          <BannerTitle>
-            Строительная
-            <br />
-            компания
-            <br />
-            Атлант-ИМК
-          </BannerTitle>
-        </BannerInner>
-        <BannerInfo>
-          <p>
-            г.Москва
-            <br />
-            тел.<Number href="tel:+79153121312">+7(915)312-13-12</Number>
-            <br />
-            г. Краснодар
-            <br />
-            тел.<Number href="tel:+79185431698">+7(918)543-16-98</Number>
-          </p>
-          <BannerInfoButton>заказать онлайн</BannerInfoButton>
-        </BannerInfo>
+          <BannerTitle>Атлант - ИМК</BannerTitle>
+          <BannerText>
+            Атлант – инженерно-монтажная компания. Предоставляет услуги по
+            проектированию в области монтажа нестандартных грузов. Комплексные
+            работы по монтажу, перемещению, погрузке и выгрузке
+            крупногабаритного и крупнотоннажного оборудования.
+          </BannerText>
       </BannerContainer>
     </Banner>
   );

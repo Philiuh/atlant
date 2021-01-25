@@ -23,16 +23,21 @@ const Container = styled.div`
 
 const Title = styled.h2`
   font: 400 36px "Open Sans";
-  text-align: left;
-  text-transform: uppercase;
-  margin: 10px 0px;
+  text-align: center;
   max-width: inherit;
 `;
 
+const TitleChapter = styled.h3`
+  font: 400 36px "Open Sans";
+  text-align: left;
+  max-width: inherit;
+  margin: 50px 120px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000000;
+`;
+
 const ProjectsList = styled.div`
-  margin-top: 80px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 `;
 
@@ -42,34 +47,20 @@ const ProjectItem = styled.div`
   max-width: 430px;
   height: auto;
   margin-right: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  background-color: #ebebeb;
 `;
 
 const ProjectImage = styled.img`
-  width: 270px;
-  height: 191px;
+  width: 100%;
   z-index: 0;
-`;
-
-const ProjectImageRotateLeft = styled.img`
-  width: 270px;
-  height: 191px;
-  position: absolute;
-  transform: rotate(-15deg);
-`;
-
-const ProjectImageRotateRight = styled.img`
-  width: 270px;
-  height: 191px;
-  position: absolute;
-  transform: rotate(+15deg);
 `;
 
 const Text = styled.p`
   font: 400 14px "Open Sans";
   text-align: left;
   line-height: 28px;
-  padding-top: 45px;
+  padding: 30px 25px;
 `;
 
 const Projects = () => {
@@ -78,11 +69,12 @@ const Projects = () => {
       <Header back={"black"} />
       <Container>
         <Title>Наши проекты</Title>
+        <TitleChapter>Проектная документация</TitleChapter>
         <ProjectsList>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic1} />
-            <ProjectImageRotateRight src={projectPic1} />
-            <ProjectImage src={projectPic1} />
+            <a href={projectPic1}>
+              <ProjectImage src={projectPic1} />
+            </a>
             <Text>
               Разработка ППРк на работу автомобильных кранов при монтаже
               стеллажных кранов-штабелёров т.м. MIAS по адресу: Краснодарский
@@ -92,9 +84,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic2} />
-            <ProjectImageRotateRight src={projectPic2} />
-            <ProjectImage src={projectPic2} />
+            <a href={projectPic2}>
+              <ProjectImage src={projectPic2} />
+            </a>
             <Text>
               Разработка ППРк по демонтажу консолей козлового крана г.Серов
               Свердловская область. (ГРЭС) в рамках реконструкции коммуникаций,
@@ -104,9 +96,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic3} />
-            <ProjectImageRotateRight src={projectPic3} />
-            <ProjectImage src={projectPic3} />
+            <a href={projectPic3}>
+              <ProjectImage src={projectPic3} />
+            </a>
             <Text>
               Технологическая схема монтажа плит перекрытия (отм. +8,790 в осях
               10-15 ряд Л-Н) автомобильным краном TADANO FAUN ATF 220G-5 г.п.
@@ -117,9 +109,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic4} />
-            <ProjectImageRotateRight src={projectPic4} />
-            <ProjectImage src={projectPic4} />
+            <a href={projectPic4}>
+              <ProjectImage src={projectPic4} />
+            </a>
             <Text>
               Разработка проектной документации для производства работ по замене
               негерметичных шаровых кранов с электроприводом Ду24 на
@@ -130,9 +122,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic5} />
-            <ProjectImageRotateRight src={projectPic5} />
-            <ProjectImage src={projectPic5} />
+            <a href={projectPic5}>
+              <ProjectImage src={projectPic5} />
+            </a>
             <Text>
               Проект производства работ (ППР), объем, по установке котлов
               Термотехник ТТ200 в количестве 3 (трёх) штук на фундаменты котлов
@@ -145,9 +137,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic6} />
-            <ProjectImageRotateRight src={projectPic6} />
-            <ProjectImage src={projectPic6} />
+            <a href={projectPic6}>
+              <ProjectImage src={projectPic6} />
+            </a>
             <Text>
               В рамках реконструкции ПС 110/10 кВ «ОБД» с заменой
               трансформаторов 2×16 МВА на 2×40 МВА 110/10 кВ» г.Краснодар
@@ -161,9 +153,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic7} />
-            <ProjectImageRotateRight src={projectPic7} />
-            <ProjectImage src={projectPic7} />
+            <a href={projectPic7}>
+              <ProjectImage src={projectPic7} />
+            </a>
             <Text>
               Проектирование и монтаж путепровода железнодорожной развязки Р260
               «Таврида» — автомобильная дорога федерального значения Керчь
@@ -182,10 +174,13 @@ const Projects = () => {
               LTM1200-5.1
             </Text>
           </ProjectItem>
+        </ProjectsList>
+        <TitleChapter>Выполнение монтажных работ</TitleChapter>
+        <ProjectsList>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic8} />
-            <ProjectImageRotateRight src={projectPic8} />
-            <ProjectImage src={projectPic8} />
+            <a href={projectPic8}>
+              <ProjectImage src={projectPic8} />
+            </a>
             <Text>
               Работа автокрана LIEBHERR LTM-1250 по демонтажу консолей козлового
               крана г. Серов (Cеровская ГРЭС) в рамках реконструкции
@@ -199,9 +194,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic9} />
-            <ProjectImageRotateRight src={projectPic9} />
-            <ProjectImage src={projectPic9} />
+            <a href={projectPic9}>
+              <ProjectImage src={projectPic9} />
+            </a>
             <Text>
               Доставка крупногабаритных балок с завода изготовителя и Монтаж
               путепровода железнодорожной развязки Р260 «Таврида» —
@@ -217,9 +212,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic10} />
-            <ProjectImageRotateRight src={projectPic10} />
-            <ProjectImage src={projectPic10} />
+            <a href={projectPic10}>
+              <ProjectImage src={projectPic10} />
+            </a>
             <Text>
               Заменой трансформаторов 2×16 МВА на 2×40 МВА 110/10 кВ»
               г.Краснодар ул.Тихорецкая май-июнь 2019 года. Замена
@@ -234,9 +229,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic11} />
-            <ProjectImageRotateRight src={projectPic11} />
-            <ProjectImage src={projectPic11} />
+            <a href={projectPic11}>
+              <ProjectImage src={projectPic11} />
+            </a>
             <Text>
               Монтаж стеллажных кранов-штабелёров т.м. MIAS по адресу:
               Краснодарский край, Темрюкский район, 1500 м. западнее п. Волна.
@@ -248,9 +243,9 @@ const Projects = () => {
             </Text>
           </ProjectItem>
           <ProjectItem>
-            <ProjectImageRotateLeft src={projectPic12} />
-            <ProjectImageRotateRight src={projectPic12} />
-            <ProjectImage src={projectPic12} />
+            <a href={projectPic12}>
+              <ProjectImage src={projectPic12} />
+            </a>
             <Text>
               Разгрузка и монтаж модульных блоков пожарной защиты общим весом 48
               тонн на подстанции г.Краснодар.

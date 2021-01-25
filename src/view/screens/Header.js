@@ -6,11 +6,11 @@ import { HashLink } from "react-router-hash-link";
 import { ROUTES } from "../../constants";
 
 const Wrapper = styled.div`
-  background-color: ${(props) => props.back};
+  background-color: black;
 `;
 
 const Logo = styled.img`
-  width: 100px;
+  width: 75px;
 `;
 
 const Container = styled.div`
@@ -26,6 +26,7 @@ const MenuItem = styled(Link)`
   text-decoration: none;
   color: #f7f7f7;
   padding: 14px 10px;
+  height: 100%;
   font: 400 18px "Open Sans";
   &:hover {
     background-color: darkorange;
